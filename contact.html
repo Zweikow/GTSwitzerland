@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GT Switzerland</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="accueil.html" class="logo">
+                <span>GT Switzerland</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="accueil.html" data-i18n="nav_accueil">Accueil</a></li>
+                <li><a href="infos.html" data-i18n="nav_infos">Infos</a></li>
+                <li><a href="experiences.html" data-i18n="nav_experiences">Nos Expériences</a></li>
+                <li><a href="voyages.html" data-i18n="nav_roadtrip">Roadtrip 2026</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="faq.html" data-i18n="nav_faq">FAQ</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="de">DE</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80'); height: 40vh;">
+        <div class="hero-content">
+            <h1 data-i18n="contact_title">Contactez-nous</h1>
+            <p>Nous sommes à votre écoute</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Informations de contact -->
+        <section class="section">
+            <h2 class="section-title">Nos Coordonnées</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📧</div>
+                        <h3 class="card-title">Email</h3>
+                        <p class="card-text">
+                            <a href="mailto:contact@gtswitzerland.com" style="color: var(--primary-color); text-decoration: none; font-weight: 600;">
+                                contact@gtswitzerland.com
+                            </a>
+                        </p>
+                        <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem;">
+                            Nous répondons sous 24-48h
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🕒</div>
+                        <h3 class="card-title">Horaires</h3>
+                        <p class="card-text">
+                            Lundi - Vendredi<br>
+                            9h00 - 18h00
+                        </p>
+                        <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem;">
+                            Fermé le week-end
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🌍</div>
+                        <h3 class="card-title">Localisation</h3>
+                        <p class="card-text">
+                            Suisse<br>
+                            Service en ligne
+                        </p>
+                        <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem;">
+                            Nous organisons des roadtrips dans toute l'Europe
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section class="section">
+            <h2 class="section-title">Envoyez-nous un message</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="success-message">
+                    <strong>Message envoyé avec succès !</strong><br>
+                    Merci pour votre message. Nous vous répondrons dans les plus brefs délais.
+                </div>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nom" data-i18n="form_nom">Nom *</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prenom" data-i18n="form_prenom">Prénom *</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="raison" data-i18n="form_raison">Raison sociale (optionnel)</label>
+                        <input type="text" id="raison" name="raison">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="adresse" data-i18n="form_adresse">Adresse *</label>
+                        <input type="text" id="adresse" name="adresse" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="npa" data-i18n="form_npa">NPA *</label>
+                            <input type="text" id="npa" name="npa" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="localite" data-i18n="form_localite">Localité *</label>
+                            <input type="text" id="localite" name="localite" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pays" data-i18n="form_pays">Pays *</label>
+                        <select id="pays" name="pays" required>
+                            <option value="">Sélectionnez un pays</option>
+                            <option value="Suisse">Suisse</option>
+                            <option value="France">France</option>
+                            <option value="Allemagne">Allemagne</option>
+                            <option value="Autriche">Autriche</option>
+                            <option value="Italie">Italie</option>
+                            <option value="Belgique">Belgique</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sujet">Sujet *</label>
+                        <select id="sujet" name="sujet" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="reservation">Réservation / Pré-réservation</option>
+                            <option value="information">Demande d'information</option>
+                            <option value="partenariat">Partenariat</option>
+                            <option value="autre">Autre question</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required 
+                                  placeholder="Décrivez votre demande en détail..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%; font-size: 1.1rem; padding: 1.2rem;" data-i18n="form_submit">
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- FAQ rapide -->
+        <section class="section">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <p style="text-align: center; margin-bottom: 2rem; color: var(--gray);">
+                    Avant de nous contacter, consultez nos questions les plus fréquentes :
+                </p>
+                <div class="grid" style="grid-template-columns: 1fr 1fr;">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title" style="font-size: 1.1rem;">Comment réserver ?</h3>
+                            <p class="card-text">Rendez-vous sur la page Roadtrip 2026 et remplissez le formulaire de pré-réservation.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title" style="font-size: 1.1rem;">Quel est le tarif ?</h3>
+                            <p class="card-text">Les tarifs sont communiqués lors de la confirmation de votre réservation par notre équipe.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title" style="font-size: 1.1rem;">Peut-on venir en groupe ?</h3>
+                            <p class="card-text">Oui ! Nous accueillons volontiers les groupes. Contactez-nous pour organiser votre participation.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title" style="font-size: 1.1rem;">Fournissez-vous les véhicules ?</h3>
+                            <p class="card-text">Vous utilisez votre propre véhicule, mais nous pouvons vous mettre en relation avec nos partenaires.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="faq.html" class="btn">Voir toutes les questions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Réseaux sociaux (optionnel) -->
+        <section class="section" style="text-align: center; background-color: var(--light-bg); padding: 3rem; border-radius: 10px;">
+            <h2 style="margin-bottom: 1rem;">Suivez nos aventures</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--gray);">
+                Restez informés de nos actualités et revivez nos roadtrips en images
+            </p>
+            <div style="font-size: 2rem; display: flex; justify-content: center; gap: 2rem; color: var(--secondary-color);">
+                <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--secondary-color)'">📘</span>
+                <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--secondary-color)'">📷</span>
+                <span style="cursor: pointer; transition: color 0.3s;" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--secondary-color)'">🎥</span>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>GT Switzerland</h3>
+                <p>Roadtrips d'exception à travers l'Europe</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:contact@gtswitzerland.com">contact@gtswitzerland.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="infos.html">Infos</a></li>
+                    <li><a href="experiences.html">Nos Expériences</a></li>
+                    <li><a href="voyages.html">Roadtrip 2026</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 GT Switzerland. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
