@@ -49,9 +49,18 @@
             <!-- 2025 - Sardaigne -->
             <div class="card" style="margin-bottom: 3rem;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
-                    <img src="images/corse/TourCorse_Vue.png" 
-                         alt="Tour de Sardaigne" 
-                         style="width: 100%; height: 400px; object-fit: cover;">
+                    <div class="carousel-container">
+                        <div class="carousel-images" data-carousel="sardaigne">
+                            <img src="images/corse/TourCorse_Vue.png" alt="Tour de Sardaigne" class="active">
+                            <img src="images/corse/TourCorse_Bonnifacio.png" alt="Tour de Sardaigne">
+                            <img src="images/corse/TourCorse_Ferry.png" alt="Tour de Sardaigne">
+                            <img src="images/corse/TourCorse_Team.png" alt="Tour de Sardaigne">
+                            <img src="images/corse/TourCorse_Roadbook.png" alt="Tour de Sardaigne">
+                        </div>
+                        <button class="carousel-button prev" onclick="changeSlide('sardaigne', -1)">‹</button>
+                        <button class="carousel-button next" onclick="changeSlide('sardaigne', 1)">›</button>
+                        <div class="carousel-indicators" data-indicators="sardaigne"></div>
+                    </div>
                     <div class="card-content" style="display: flex; flex-direction: column; justify-content: center; padding: 2rem;">
                         <div class="timeline-year" style="font-size: 1.5rem; margin-bottom: 1rem;">2025</div>
                         <h3 class="card-title" style="font-size: 2rem; margin-bottom: 1rem;" data-i18n="exp_sardaigne_title">Tour de Sardaigne</h3>
@@ -96,18 +105,40 @@
                             </div>
                         </div>
                     </div>
-                    <img src="images/pyrenees/Pyrénées_Tour_Col.png" 
-                         alt="Tour des Pyrénées" 
-                         style="width: 100%; height: 400px; object-fit: cover;">
+                    <div class="carousel-container">
+                        <div class="carousel-images" data-carousel="pyrenees">
+                            <img src="images/pyrenees/Pyrénées_Tour_Col.png" alt="Tour des Pyrénées" class="active">
+                            <img src="images/pyrenees/Pyrénées_Tour_Vue.png" alt="Tour des Pyrénées">
+                            <img src="images/pyrenees/Pyrénées_Tour_Vue2.png" alt="Tour des Pyrénées">
+                            <img src="images/pyrenees/Pyrénées_Tour_Team.png" alt="Tour des Pyrénées">
+                            <img src="images/pyrenees/Pyrénées_Tour_Col_Espagne.png" alt="Tour des Pyrénées">
+                            <img src="images/pyrenees/Pyrénées_Tour_Bordeaux.png" alt="Tour des Pyrénées">
+                            <img src="images/pyrenees/Pyrénées_Tour_Bordeaux2.png" alt="Tour des Pyrénées">
+                            <img src="images/pyrenees/Pyrénées_Tour_Bordeaux3.png" alt="Tour des Pyrénées">
+                            <img src="images/pyrenees/Pyrénées_Tour_BordeauxWine.png" alt="Tour des Pyrénées">
+                        </div>
+                        <button class="carousel-button prev" onclick="changeSlide('pyrenees', -1)">‹</button>
+                        <button class="carousel-button next" onclick="changeSlide('pyrenees', 1)">›</button>
+                        <div class="carousel-indicators" data-indicators="pyrenees"></div>
+                    </div>
                 </div>
             </div>
 
             <!-- 2023 - Corse -->
             <div class="card" style="margin-bottom: 3rem;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
-                    <img src="images/corse/TourCorse_Bonnifacio.png" 
-                         alt="Tour de Corse" 
-                         style="width: 100%; height: 400px; object-fit: cover;">
+                    <div class="carousel-container">
+                        <div class="carousel-images" data-carousel="corse">
+                            <img src="images/corse/TourCorse_Bonnifacio.png" alt="Tour de Corse" class="active">
+                            <img src="images/corse/TourCorse_Vue.png" alt="Tour de Corse">
+                            <img src="images/corse/TourCorse_Ferry.png" alt="Tour de Corse">
+                            <img src="images/corse/TourCorse_Team.png" alt="Tour de Corse">
+                            <img src="images/corse/TourCorse_Roadbook.png" alt="Tour de Corse">
+                        </div>
+                        <button class="carousel-button prev" onclick="changeSlide('corse', -1)">‹</button>
+                        <button class="carousel-button next" onclick="changeSlide('corse', 1)">›</button>
+                        <div class="carousel-indicators" data-indicators="corse"></div>
+                    </div>
                     <div class="card-content" style="display: flex; flex-direction: column; justify-content: center; padding: 2rem;">
                         <div class="timeline-year" style="font-size: 1.5rem; margin-bottom: 1rem;">2023</div>
                         <h3 class="card-title" style="font-size: 2rem; margin-bottom: 1rem;" data-i18n="exp_corse_title">Tour de Corse</h3>
@@ -153,18 +184,38 @@
                             </div>
                         </div>
                     </div>
-                    <img src="images/toscane/Vue_LacComo_2022.png" 
-                         alt="Tour de la Toscane" 
-                         style="width: 100%; height: 400px; object-fit: cover;">
+                    <div class="carousel-container">
+                        <div class="carousel-images" data-carousel="toscane">
+                            <img src="images/toscane/Vue_LacComo_2022.png" alt="Tour de la Toscane" class="active">
+                            <img src="images/toscane/Mille Miglia Tour_Musée.png" alt="Tour de la Toscane">
+                            <img src="images/toscane/Ambiance_hotel_2022.png" alt="Tour de la Toscane">
+                        </div>
+                        <button class="carousel-button prev" onclick="changeSlide('toscane', -1)">‹</button>
+                        <button class="carousel-button next" onclick="changeSlide('toscane', 1)">›</button>
+                        <div class="carousel-indicators" data-indicators="toscane"></div>
+                    </div>
                 </div>
             </div>
 
             <!-- 2021 - Suisse -->
             <div class="card" style="margin-bottom: 3rem;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
-                    <img src="images/switzerland/SwitzerlandTour_Alps1.png" 
-                         alt="Tour de Suisse" 
-                         style="width: 100%; height: 400px; object-fit: cover;">
+                    <div class="carousel-container">
+                        <div class="carousel-images" data-carousel="suisse">
+                            <img src="images/switzerland/SwitzerlandTour_Alps1.png" alt="Tour de Suisse" class="active">
+                            <img src="images/switzerland/SwitzerlandTour_Alps3.png" alt="Tour de Suisse">
+                            <img src="images/switzerland/SwitzerlandTour_Alps5.png" alt="Tour de Suisse">
+                            <img src="images/switzerland/SwitzerlandTour_Zermatt_2.png" alt="Tour de Suisse">
+                            <img src="images/switzerland/SwitzerlandTour_FluelaPass.png" alt="Tour de Suisse">
+                            <img src="images/switzerland/SwitzerlandTour_SanBernardino.png" alt="Tour de Suisse">
+                            <img src="images/switzerland/SwitzerlandTour_SanBernardino2.png" alt="Tour de Suisse">
+                            <img src="images/switzerland/SwitzerlandTour_BadRagaz.png" alt="Tour de Suisse">
+                            <img src="images/switzerland/SwitzerlandTour_Etapes.png" alt="Tour de Suisse">
+                        </div>
+                        <button class="carousel-button prev" onclick="changeSlide('suisse', -1)">‹</button>
+                        <button class="carousel-button next" onclick="changeSlide('suisse', 1)">›</button>
+                        <div class="carousel-indicators" data-indicators="suisse"></div>
+                    </div>
                     <div class="card-content" style="display: flex; flex-direction: column; justify-content: center; padding: 2rem;">
                         <div class="timeline-year" style="font-size: 1.5rem; margin-bottom: 1rem;">2021</div>
                         <h3 class="card-title" style="font-size: 2rem; margin-bottom: 1rem;" data-i18n="exp_suisse_title">Tour de Suisse</h3>

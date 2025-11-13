@@ -559,3 +559,89 @@ function formatFormData(form) {
     
     return data;
 }
+
+// Carrousel d'images
+const carousels = {};
+
+// Initialiser les carrousels au chargement de la page
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialiser chaque carrousel
+    document.querySelectorAll('[data-carousel]').forEach(carousel => {
+        const carouselId = carousel.dataset.carousel;
+        const images = carousel.querySelectorAll('img');
+        const indicatorsContainer = document.querySelector(`[data-indicators="${carouselId}"]`);
+        
+        // Créer l'objet carrousel
+        carousels[carouselId] = {
+            currentIndex: 0,
+            totalImages: images.length,
+            images: images
+        };
+        
+        // Créer les indicateurs
+        if (indicatorsContainer) {
+            for (let i = 0; i < images.length; i++) {
+                const indicator = document.createElement('div');
+                indicator.className = 'carousel-indicator' + (i === 0 ? ' active' : '');
+                indicator.onclick = () => goToSlide(carouselId, i);
+                indicatorsContainer.appendChild(indicator);
+            }
+        }
+    });
+});
+
+// Changer de slide
+function changeSlide(carouselId, direction) {
+    const carousel = carousels[carouselId];
+    if (!carousel) return;
+    
+    // Calculer le nouvel index
+    carousel.currentIndex += direction;
+    
+    // Gérer le bouclage
+    if (carousel.currentIndex < 0) {
+        carousel.currentIndex = carousel.totalImages - 1;
+    } else if (carousel.currentIndex >= carousel.totalImages) {
+        carousel.currentIndex = 0;
+    }
+    
+    updateCarousel(carouselId);
+}
+
+// Aller à une slide spécifique
+function goToSlide(carouselId, index) {
+    const carousel = carousels[carouselId];
+    if (!carousel) return;
+    
+    carousel.currentIndex = index;
+    updateCarousel(carouselId);
+}
+
+// Mettre à jour l'affichage du carrousel
+function updateCarousel(carouselId) {
+    const carousel = carousels[carouselId];
+    if (!carousel) return;
+    
+    // Mettre à jour les images
+    carousel.images.forEach((img, index) => {
+        if (index === carousel.currentIndex) {
+            img.classList.add('active');
+        } else {
+            img.classList.remove('active');
+        }
+    });
+    
+    // Mettre à jour les indicateurs
+    const indicatorsContainer = document.querySelector(`[data-indicators="${carouselId}"]`);
+    if (indicatorsContainer) {
+        const indicators = indicatorsContainer.querySelectorAll('.carousel-indicator');
+        indicators.forEach((indicator, index) => {
+            if (index === carousel.currentIndex) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
+    }
+}
+
