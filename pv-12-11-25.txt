@@ -1,0 +1,13 @@
+Formule de parole : Nous
+Contact et Email : contact@gtswitzerland.com
+Domaine : GoDaddy reservé
+Formulaire de contact : Nom, Prénom, Raison sociale, Adresse, NPA, Localité, Pays.
+Langues : Français, Allemand, Anglais
+Menu du site : Accueil, Infos, Nos Expériences, Roadtrip 2026, Contact, FAQ
+
+Accueil : Photo d'ambiance avec le logo, un texte court qui décris l'objectif du site. Bouton en-dessous de la description "Nous contacter".
+News : Infos sur les futurs voyages
+Nos Expériences : 5 aperçu de voyages déjà réalisé. 2025 - Tour de Sardaigne, 2024 - Tour des pyrénnées, 2023 - Tour de Corse, 2022 - Tour de la Toscane (Mille Miglia), 2021 - Tour de Suisse
+RoadTrip 2026 :
+Contact : 
+FAQ :
