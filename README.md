@@ -2,7 +2,11 @@
 
 Site web officiel de **GT Switzerland** - Organisateur de roadtrips d'exception à travers l'Europe depuis 2021.
 
-![GT Switzerland](Site/images/switzerland/SwitzerlandTour_Alps5.png)
+## 🌐 Site en ligne
+
+**Visitez le site : [https://zweikow.github.io/GTSwitzerland/accueil.html](https://zweikow.github.io/GTSwitzerland/accueil.html)**
+
+![GT Switzerland](images/switzerland/SwitzerlandTour_Alps5.png)
 
 ## 📋 À propos
 
@@ -43,12 +47,14 @@ Aucun serveur web n'est requis pour le développement local. Le site est entièr
 1. Clonez le dépôt :
 ```bash
 git clone https://github.com/Zweikow/GTSwitzerland.git
+1. Clonez le dépôt :
+```bash
+git clone https://github.com/Zweikow/GTSwitzerland.git
 cd GTSwitzerland
 ```
 
 2. Ouvrez le site :
 ```bash
-cd Site
 # Ouvrez accueil.html dans votre navigateur
 ```
 
@@ -64,35 +70,35 @@ npx http-server
 php -S localhost:8000
 ```
 
-Puis accédez à `http://localhost:8000/Site/accueil.html`
+Puis accédez à `http://localhost:8000/accueil.html`
 
 ## 📁 Structure du Projet
 
 ```
 GTSwitzerland/
-├── Site/                           # Site web principal
-│   ├── accueil.html               # Page d'accueil
-│   ├── experiences.html           # Historique des roadtrips
-│   ├── voyages.html              # Roadtrip 2026
-│   ├── infos.html                # Informations pratiques
-│   ├── faq.html                  # Questions fréquentes
-│   ├── contact.html              # Formulaire de contact
-│   ├── style.css                 # Feuille de style principale
-│   ├── script.js                 # Scripts et traductions
-│   ├── images/                   # Images du site
-│   │   ├── switzerland/          # Photos Tour de Suisse
-│   │   ├── corse/                # Photos Tour de Corse
-│   │   ├── pyrenees/             # Photos Tour des Pyrénées
-│   │   ├── toscane/              # Photos Tour de Toscane
-│   │   └── logo/                 # Logos GT Switzerland
-│   ├── LICENSE                   # Licence MIT
-│   └── .gitignore               # Fichiers ignorés par Git
+├── accueil.html                   # Page d'accueil
+├── experiences.html               # Historique des roadtrips
+├── voyages.html                   # Roadtrip 2026
+├── infos.html                     # Informations pratiques
+├── faq.html                       # Questions fréquentes
+├── contact.html                   # Formulaire de contact
+├── style.css                      # Feuille de style principale
+├── script.js                      # Scripts et traductions
+├── images/                        # Images du site
+│   ├── switzerland/               # Photos Tour de Suisse
+│   ├── corse/                     # Photos Tour de Corse
+│   ├── pyrenees/                  # Photos Tour des Pyrénées
+│   ├── toscane/                   # Photos Tour de Toscane
+│   └── logo/                      # Logos GT Switzerland
+├── LICENSE                        # Licence MIT
+├── README.md                      # Ce fichier
+├── .gitignore                     # Fichiers ignorés par Git
 │
 ├── Switzerland Tour - Alps/       # Photos originales Suisse
-├── Tour de Corse - France/       # Photos originales Corse
+├── Tour de Corse - France/        # Photos originales Corse
 ├── Pyrénées Tour - France_Espagne/ # Photos originales Pyrénées
-├── Mille Miglia Tour - Toscane/  # Photos originales Toscane
-├── Logo/                         # Logos originaux
+├── Mille Miglia Tour - Toscane/   # Photos originales Toscane
+├── Logo/                          # Logos originaux
 ├── Administration - planning/     # Documents administratifs
 ├── Concurrents/                  # Analyse concurrentielle
 └── README.md                     # Ce fichier
@@ -139,31 +145,38 @@ GTSwitzerland/
 
 ## 🌐 Déploiement
 
-Le site peut être déployé sur n'importe quelle plateforme d'hébergement statique :
+Le site est actuellement hébergé sur **GitHub Pages** :
+- **URL** : [https://zweikow.github.io/GTSwitzerland/accueil.html](https://zweikow.github.io/GTSwitzerland/accueil.html)
 
-### GitHub Pages
-```bash
-# Activer GitHub Pages dans les paramètres du dépôt
-# Source: main branch / Site folder
-```
+### Activer/Mettre à jour GitHub Pages
 
-### Netlify
-```bash
-# Connecter le dépôt GitHub
-# Build command: (vide)
-# Publish directory: Site
-```
+1. Allez sur [https://github.com/Zweikow/GTSwitzerland/settings/pages](https://github.com/Zweikow/GTSwitzerland/settings/pages)
+2. Dans "Branch", sélectionnez `main` et `/ (root)`
+3. Cliquez sur "Save"
+4. Le site sera accessible à : `https://zweikow.github.io/GTSwitzerland/accueil.html`
 
-### Vercel
-```bash
-# Importer le projet depuis GitHub
-# Framework Preset: Other
-# Root Directory: Site
-```
+### Autres options d'hébergement gratuit
+
+#### Netlify
+1. Connectez-vous sur [netlify.com](https://netlify.com)
+2. "Add new site" → "Import an existing project"
+3. Connectez votre GitHub et sélectionnez le dépôt
+4. Build settings:
+   - Build command: (laisser vide)
+   - Publish directory: (laisser vide ou `/`)
+5. Deploy!
+
+#### Vercel
+1. Connectez-vous sur [vercel.com](https://vercel.com)
+2. "Add New" → "Project"
+3. Importez depuis GitHub
+4. Framework Preset: Other
+5. Root Directory: `./`
+6. Deploy!
 
 ## 📝 Traductions
 
-Les traductions sont gérées dans `Site/script.js` via l'objet `translations`. Pour ajouter une nouvelle traduction :
+Les traductions sont gérées dans `script.js` via l'objet `translations`. Pour ajouter une nouvelle traduction :
 
 ```javascript
 const translations = {
@@ -206,7 +219,7 @@ Pour toute question ou demande d'information :
 
 ## 📄 Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](Site/LICENSE) pour plus de détails.
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## 🙏 Remerciements
 
