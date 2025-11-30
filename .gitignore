@@ -15,3 +15,46 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+
+# ===================================
+# FICHIERS CONFIDENTIELS
+# ===================================
+
+# Documents administratifs et planning
+Administration - planning/
+Concurrents/
+Zone-Dns/
+
+# Photos originales haute résolution
+Switzerland Tour - Alps/
+Tour de Corse - France/
+Pyrénées Tour - France_Espagne/
+Mille Miglia Tour - Toscane/
+Logo/
+
+# Documents de travail et notes
+*.txt
+pv-*.txt
+notes-*.txt
+
+# Informations sensibles
+**/private/
+**/confidential/
+**/*-private.*
+**/*-confidential.*
+
+# Fichiers de configuration locaux
+.env
+.env.local
+config.local.js
+secrets.json
+
+# Base de données locale
+*.db
+*.sqlite
+*.sqlite3
+
+# Données clients (si vous en ajoutez)
+clients/
+reservations/
+participants/
