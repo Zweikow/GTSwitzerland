@@ -50,75 +50,90 @@
     <div class="container">
         <!-- Information sur le voyage -->
         <section class="section">
-            <h2 class="section-title" data-i18n="roadtrip_prochaine_aventure">Notre Prochain Roadtrip</h2>
-            <div style="max-width: 900px; margin: 0 auto; text-align: center; margin-bottom: 3rem;">
-                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--gray); margin-bottom: 2rem;" data-i18n="roadtrip_intro">
-                    Nous préparons actuellement une nouvelle aventure exceptionnelle pour 2026. La destination sera 
-                    dévoilée prochainement à tous nos participants inscrits. Une chose est sûre : ce sera inoubliable !
-                </p>
-                <div class="grid" style="margin-top: 2rem;">
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">📅 <span data-i18n="roadtrip_quand">Quand ?</span></h3>
-                            <p class="card-text"><span data-i18n="roadtrip_quand_desc">Printemps/Été 2026</span><br><span data-i18n="roadtrip_quand_desc2">Dates exactes à confirmer</span></p>
+            <h2 class="section-title" data-i18n="roadtrip_prochaine_aventure">Réservez votre place pour nos prochaines aventures</h2>
+            <div style="max-width: 900px; margin: 0 auto; margin-bottom: 3rem;">
+                
+                <!-- Tour des Pyrénées 2026 -->
+                <div class="card" style="margin-bottom: 3rem;">
+                    <div class="card-content">
+                        <h3 class="card-title" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 1rem;">🏔️ Tour des Pyrénées</h3>
+                        <h4 style="font-size: 1.3rem; margin-bottom: 1.5rem;">De la méditerranée à l'atlantique – visite de caves à Bordeaux</h4>
+                        
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-bottom: 2rem;">
+                            <div>
+                                <p><strong>📅 Date :</strong> 2 au 10 mai 2026</p>
+                                <p><strong>🌙 Nuits :</strong> 7 nuits</p>
+                            </div>
+                            <div>
+                                <p><strong>🚗 Places :</strong> 10 voitures max.</p>
+                                <p><strong>💰 Prix :</strong> Sur demande</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">⏱️ <span data-i18n="roadtrip_duree_title">Durée</span></h3>
-                            <p class="card-text"><span data-i18n="roadtrip_duree_desc">6 à 7 jours</span><br><span data-i18n="roadtrip_duree_desc2">De conduite et découverte</span></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <h3 class="card-title">🚗 <span data-i18n="roadtrip_places_title">Places</span></h3>
-                            <p class="card-text"><span data-i18n="roadtrip_places_desc">25 véhicules maximum</span><br><span data-i18n="roadtrip_places_desc2">Inscription limitée</span></p>
-                        </div>
+                        
+                        <p style="color: var(--primary-color); font-weight: 600; margin-bottom: 1rem;">
+                            <strong>Acompte :</strong> 50% à la réservation et solde 10 jours avant le voyage
+                        </p>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <!-- Ce qui est inclus -->
         <section class="section">
             <h2 class="section-title" data-i18n="roadtrip_inclus">Ce qui est inclus</h2>
-            <div class="grid">
+            <div class="grid" style="margin-bottom: 2rem;">
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">✅ <span data-i18n="roadtrip_hebergement">Hébergement</span></h3>
-                        <p class="card-text" data-i18n="roadtrip_hebergement_desc">6 nuits dans des hôtels sélectionnés pour leur qualité et leur charme</p>
+                        <h3 class="card-title">✅ Hébergement</h3>
+                        <p class="card-text">Les nuits dans des hôtels de minimum 4 étoiles, chambre double, taxes de séjour, apéros de bienvenus dans chaque hôtel</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">✅ <span data-i18n="roadtrip_repas">Repas</span></h3>
-                        <p class="card-text" data-i18n="roadtrip_repas_desc">Petits-déjeuners et dîners inclus, découverte de la gastronomie locale</p>
+                        <h3 class="card-title">✅ Ferry</h3>
+                        <p class="card-text">Inclus dans le forfait, si nécessaire</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">✅ <span data-i18n="roadtrip_guidage">Guidage</span></h3>
-                        <p class="card-text" data-i18n="roadtrip_guidage_desc">Guidage GPS fourni, roadbook détaillé et véhicule d'assistance</p>
+                        <h3 class="card-title">✅ Guidage</h3>
+                        <p class="card-text">Remise d'un roadbook détaillé avec les étapes, les distances, les stops prévus</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">✅ <span data-i18n="roadtrip_activites">Activités</span></h3>
-                        <p class="card-text" data-i18n="roadtrip_activites_desc">Visites exclusives et activités organisées tout au long du voyage</p>
+                        <h3 class="card-title">✅ Repas</h3>
+                        <p class="card-text">Petits-déjeuners et repas de midi et du soir, <strong style="color: var(--primary-color);">les boissons sont inclus</strong> dans le forfait (vins choisis par l'organisateur pour les repas)</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">✅ <span data-i18n="roadtrip_support">Support</span></h3>
-                        <p class="card-text" data-i18n="roadtrip_support_desc">Assistance technique et médicale 24h/24 pendant tout le voyage</p>
+                        <h3 class="card-title">✅ Activités</h3>
+                        <p class="card-text">Visites, frais d'entrée à des musées ou de dégustation</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-content">
-                        <h3 class="card-title">✅ <span data-i18n="roadtrip_souvenirs">Souvenirs</span></h3>
-                        <p class="card-text" data-i18n="roadtrip_souvenirs_desc">Pack de bienvenue, photos professionnelles du voyage incluses</p>
+                        <h3 class="card-title">✅ Signalétique</h3>
+                        <p class="card-text">Autocollant du voyage avec nom et prénom des conducteurs et copilotes</p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">✅ Souvenirs</h3>
+                        <p class="card-text">Remise d'un livret de photos et du parcours après le voyage et d'un cadeau, photo souvenir et film du voyage</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="section-title" style="font-size: 1.5rem; margin-top: 2rem; color: var(--primary-color);">❌ Non inclus</h3>
+            <div style="max-width: 800px; margin: 2rem auto;">
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">❌ Vins, spiritueux en plus du forfait repas/vins, spas si pas inclus dans l'hébergement</li>
+                    <li style="padding: 0.5rem 0; border-bottom: 1px solid #eee;">❌ Essence du véhicule</li>
+                    <li style="padding: 0.5rem 0;">❌ Assurance RC et rapatriement en cas de panne ou problème médical</li>
+                </ul>
             </div>
         </section>
 
@@ -134,17 +149,22 @@
                 </div>
 
                 <div style="background-color: var(--light-bg); padding: 2rem; border-radius: 10px; margin-bottom: 2rem;">
-                    <h3 style="margin-bottom: 1rem;">ℹ️ Comment ça fonctionne ?</h3>
-                    <p style="color: var(--gray); line-height: 1.6;">
-                        Ce formulaire vous permet d'effectuer une pré-réservation pour notre roadtrip 2026. 
+                    <h3 style="margin-bottom: 1rem;">ℹ️ Comment cela fonctionne ?</h3>
+                    <p style="color: var(--gray); line-height: 1.6; margin-bottom: 1rem;">
+                        Ce formulaire vous permet d'effectuer une pré-réservation pour un de nos voyages en 2026. 
                         Une fois votre demande envoyée, notre équipe vous contactera personnellement pour :
                     </p>
                     <ul style="margin-left: 2rem; margin-top: 1rem; color: var(--gray); line-height: 1.8;">
                         <li>Confirmer votre participation</li>
                         <li>Vous communiquer la destination et le programme détaillé</li>
                         <li>Recueillir des informations complémentaires (nombre de passagers, régimes alimentaires, etc.)</li>
-                        <li>Vous expliquer les modalités de paiement</li>
+                        <li style="color: var(--primary-color); font-weight: 600;">Vous expliquez les modalités de paiement – acompte de 50% à la réservation définitive et solde 10 jours avant le départ</li>
                     </ul>
+                    
+                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 2px solid var(--primary-color);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 1rem;">🛡️ Pourquoi rejoindre GT Switzerland ?</h4>
+                        <p style="color: var(--gray); font-weight: 600;">✅ Sécurité - Organisation professionnelle et accompagnement pendant le voyage</p>
+                    </div>
                 </div>
 
                 <form id="reservationForm">
@@ -292,7 +312,7 @@
             <div class="footer-section">
                 <h3 data-i18n="footer_contact">Contact</h3>
                 <ul>
-                    <li>Email: <a href="mailto:contact@gtswitzerland.com">contact@gtswitzerland.com</a></li>
+                    <li data-i18n="footer_localisation">Localisation : Suisse, Famille Baeriswyl, Les Paccots, ch. Des Moilles 16</li>                    <li>Email: <a href="mailto:contact@gtswitzerland.com">contact@gtswitzerland.com</a></li>
                 </ul>
             </div>
             <div class="footer-section">
