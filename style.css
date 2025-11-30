@@ -27,10 +27,19 @@ body {
 nav {
     background-color: var(--secondary-color);
     padding: 1rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+nav.hidden {
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
 }
 
 .nav-container {
@@ -148,6 +157,7 @@ nav {
     justify-content: center;
     color: var(--white);
     text-align: center;
+    margin-top: 70px;
 }
 
 .hero::before {

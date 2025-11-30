@@ -505,6 +505,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Navigation auto-hide on scroll
+    const nav = document.querySelector('nav');
+    let lastScroll = 0;
+    let scrollTimeout;
+    
+    window.addEventListener('scroll', function() {
+        const currentScroll = window.pageYOffset;
+        
+        // Clear timeout précédent
+        clearTimeout(scrollTimeout);
+        
+        // Si on scroll vers le bas et qu'on est au-delà de 100px
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            nav.classList.add('hidden');
+        } 
+        // Si on scroll vers le haut ou qu'on est en haut de la page
+        else if (currentScroll < lastScroll || currentScroll < 10) {
+            nav.classList.remove('hidden');
+        }
+        
+        // Réafficher la nav si on arrête de scroller pendant 2 secondes
+        scrollTimeout = setTimeout(function() {
+            nav.classList.remove('hidden');
+        }, 2000);
+        
+        lastScroll = currentScroll;
+    });
+    
     // FAQ toggle
     const faqQuestions = document.querySelectorAll('.faq-question');
     faqQuestions.forEach(question => {
