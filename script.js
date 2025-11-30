@@ -477,6 +477,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Burger menu
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navContent = document.querySelector('.nav-content');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    if (burgerMenu) {
+        burgerMenu.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navContent.classList.toggle('active');
+        });
+        
+        // Fermer le menu en cliquant sur un lien
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                burgerMenu.classList.remove('active');
+                navContent.classList.remove('active');
+            });
+        });
+        
+        // Fermer le menu en cliquant en dehors
+        document.addEventListener('click', function(e) {
+            if (!navContent.contains(e.target) && !burgerMenu.contains(e.target)) {
+                burgerMenu.classList.remove('active');
+                navContent.classList.remove('active');
+            }
+        });
+    }
+    
     // FAQ toggle
     const faqQuestions = document.querySelectorAll('.faq-question');
     faqQuestions.forEach(question => {
