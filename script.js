@@ -921,7 +921,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 nom: this.nom.value,
                 prenom: this.prenom.value,
                 email: this.email.value,
-                telephone: this.telephone.value,
+                telephone: this.telephone ? this.telephone.value : 'Non renseigné',
                 raison: this.raison.value || 'Non spécifié',
                 adresse: this.adresse.value,
                 npa: this.npa.value,
