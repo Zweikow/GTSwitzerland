@@ -121,6 +121,70 @@ const translations = {
         roadtrip_souvenirs: "Souvenirs",
         roadtrip_souvenirs_desc: "Pack de bienvenue, photos professionnelles du voyage incluses",
         
+        // Voyages - Pyrénées 2026
+        roadtrip_pyrenees_title: "Tour des Pyrénées",
+        roadtrip_pyrenees_subtitle: "De la méditerranée à l'atlantique – visite de caves à Bordeaux",
+        roadtrip_pyrenees_date: "Date :",
+        roadtrip_pyrenees_date_value: "2 au 10 mai 2026",
+        roadtrip_pyrenees_nuits: "Nuits :",
+        roadtrip_pyrenees_nuits_value: "7 nuits",
+        roadtrip_pyrenees_places: "Places :",
+        roadtrip_pyrenees_places_value: "10 voitures max.",
+        roadtrip_pyrenees_prix: "Prix :",
+        roadtrip_pyrenees_prix_value: "Sur demande",
+        roadtrip_pyrenees_acompte: "Acompte :",
+        roadtrip_pyrenees_acompte_value: "50% à la réservation et solde 10 jours avant le voyage",
+        
+        // Voyages - Ce qui est inclus détaillé
+        roadtrip_hebergement_detail: "Les nuits dans des hôtels de minimum 4 étoiles, chambre double, taxes de séjour, apéros de bienvenus dans chaque hôtel",
+        roadtrip_ferry: "Ferry",
+        roadtrip_ferry_desc: "Inclus dans le forfait, si nécessaire",
+        roadtrip_guidage_detail: "Remise d'un roadbook détaillé avec les étapes, les distances, les stops prévus",
+        roadtrip_repas_detail: "Petits-déjeuners et repas de midi et du soir, les boissons sont inclus dans le forfait (vins choisis par l'organisateur pour les repas)",
+        roadtrip_activites_detail: "Visites, frais d'entrée à des musées ou de dégustation",
+        roadtrip_signaletique: "Signalétique",
+        roadtrip_signaletique_desc: "Autocollant du voyage avec nom et prénom des conducteurs et copilotes",
+        roadtrip_souvenirs_detail: "Remise d'un livret de photos et du parcours après le voyage et d'un cadeau, photo souvenir et film du voyage",
+        
+        // Non inclus
+        roadtrip_non_inclus: "Non inclus",
+        roadtrip_non_inclus_1: "Vins, spiritueux en plus du forfait repas/vins, spas si pas inclus dans l'hébergement",
+        roadtrip_non_inclus_2: "Essence du véhicule",
+        roadtrip_non_inclus_3: "Assurance RC et rapatriement en cas de panne ou problème médical",
+        
+        // Formulaire de réservation
+        form_prereservation_title: "Formulaire de Pré-Réservation",
+        form_comment_ca_marche: "Comment cela fonctionne ?",
+        form_comment_ca_marche_intro: "Ce formulaire vous permet d'effectuer une pré-réservation pour un de nos voyages en 2026. Une fois votre demande envoyée, notre équipe vous contactera personnellement pour :",
+        form_comment_ca_marche_1: "Confirmer votre participation",
+        form_comment_ca_marche_2: "Vous communiquer la destination et le programme détaillé",
+        form_comment_ca_marche_3: "Recueillir des informations complémentaires (nombre de passagers, régimes alimentaires, etc.)",
+        form_comment_ca_marche_4: "Vous expliquez les modalités de paiement – acompte de 50% à la réservation définitive et solde 10 jours avant le départ",
+        form_pourquoi_rejoindre: "Pourquoi rejoindre GT Switzerland ?",
+        form_securite_desc: "Sécurité - Organisation professionnelle et accompagnement pendant le voyage",
+        form_important_note: "Important :",
+        form_important_desc: "Les champs marqués d'un astérisque (*) sont obligatoires. Cette pré-réservation ne constitue pas un engagement définitif et ne donne pas lieu à un paiement immédiat.",
+        form_envoyer: "Envoyer ma pré-réservation",
+        
+        // Pourquoi nous rejoindre
+        pourquoi_rejoindre_title: "Pourquoi rejoindre GT Switzerland ?",
+        pourquoi_experience: "Expérience",
+        pourquoi_experience_desc: "5 ans d'organisation de roadtrips réussis à travers l'Europe",
+        pourquoi_communaute: "Communauté",
+        pourquoi_communaute_desc: "Rejoignez une communauté de passionnés partageant les mêmes valeurs",
+        pourquoi_securite: "Sécurité",
+        pourquoi_securite_desc: "Organisation professionnelle avec assistance complète 24h/24",
+        pourquoi_qualite: "Qualité",
+        pourquoi_qualite_desc: "Hébergements et prestations soigneusement sélectionnés",
+        pourquoi_routes: "Routes d'Exception",
+        pourquoi_routes_desc: "Les plus belles routes et cols d'Europe",
+        pourquoi_ambiance: "Ambiance Conviviale",
+        pourquoi_ambiance_desc: "Partage et passion entre participants",
+        
+        // Message de succès
+        success_message_title: "Merci pour votre réservation !",
+        success_message_text: "Nous avons bien reçu votre demande. Notre équipe vous contactera dans les 48 heures pour confirmer votre participation et vous demander les informations complémentaires nécessaires (nombre de passagers, préférences alimentaires, etc.).",
+        
         // Formulaires
         form_nom: "Nom",
         form_prenom: "Prénom",
@@ -265,6 +329,70 @@ const translations = {
         roadtrip_souvenirs: "Erinnerungen",
         roadtrip_souvenirs_desc: "Willkommenspaket, professionelle Fotos der Reise inklusive",
         
+        // Voyages - Pyrénées 2026
+        roadtrip_pyrenees_title: "Pyrenäen-Tour",
+        roadtrip_pyrenees_subtitle: "Vom Mittelmeer zum Atlantik – Besuch von Weinkellern in Bordeaux",
+        roadtrip_pyrenees_date: "Datum:",
+        roadtrip_pyrenees_date_value: "2. bis 10. Mai 2026",
+        roadtrip_pyrenees_nuits: "Nächte:",
+        roadtrip_pyrenees_nuits_value: "7 Nächte",
+        roadtrip_pyrenees_places: "Plätze:",
+        roadtrip_pyrenees_places_value: "Max. 10 Autos",
+        roadtrip_pyrenees_prix: "Preis:",
+        roadtrip_pyrenees_prix_value: "Auf Anfrage",
+        roadtrip_pyrenees_acompte: "Anzahlung:",
+        roadtrip_pyrenees_acompte_value: "50% bei Buchung und Restzahlung 10 Tage vor der Reise",
+        
+        // Voyages - Ce qui est inclus détaillé
+        roadtrip_hebergement_detail: "Übernachtungen in Hotels mit mindestens 4 Sternen, Doppelzimmer, Kurtaxe, Willkommensgetränke in jedem Hotel",
+        roadtrip_ferry: "Fähre",
+        roadtrip_ferry_desc: "Im Paket enthalten, falls erforderlich",
+        roadtrip_guidage_detail: "Detailliertes Roadbook mit Etappen, Entfernungen und geplanten Stopps",
+        roadtrip_repas_detail: "Frühstück sowie Mittag- und Abendessen, Getränke im Paket enthalten (vom Veranstalter ausgewählte Weine zu den Mahlzeiten)",
+        roadtrip_activites_detail: "Besuche, Eintrittsgebühren für Museen oder Verkostungen",
+        roadtrip_signaletique: "Beschilderung",
+        roadtrip_signaletique_desc: "Aufkleber der Reise mit Namen und Vornamen der Fahrer und Beifahrer",
+        roadtrip_souvenirs_detail: "Fotoalbum und Reiseverlauf nach der Reise sowie ein Geschenk, Erinnerungsfoto und Film der Reise",
+        
+        // Non inclus
+        roadtrip_non_inclus: "Nicht inbegriffen",
+        roadtrip_non_inclus_1: "Weine, Spirituosen zusätzlich zum Mahlzeiten-/Weinpaket, Spas, falls nicht in der Unterkunft enthalten",
+        roadtrip_non_inclus_2: "Fahrzeugbenzin",
+        roadtrip_non_inclus_3: "Haftpflichtversicherung und Rückführung bei Panne oder medizinischen Problemen",
+        
+        // Formulaire de réservation
+        form_prereservation_title: "Vorb uchungsformular",
+        form_comment_ca_marche: "Wie funktioniert es?",
+        form_comment_ca_marche_intro: "Mit diesem Formular können Sie eine Vorbuchung für eine unserer Reisen im Jahr 2026 vornehmen. Sobald Ihre Anfrage gesendet wurde, wird sich unser Team persönlich mit Ihnen in Verbindung setzen, um:",
+        form_comment_ca_marche_1: "Ihre Teilnahme zu bestätigen",
+        form_comment_ca_marche_2: "Ihnen das Ziel und das detaillierte Programm mitzuteilen",
+        form_comment_ca_marche_3: "Zusätzliche Informationen zu sammeln (Anzahl der Passagiere, Ernährungsbedürfnisse usw.)",
+        form_comment_ca_marche_4: "Ihnen die Zahlungsmodalitäten zu erklären – 50% Anzahlung bei endgültiger Buchung und Restzahlung 10 Tage vor Abreise",
+        form_pourquoi_rejoindre: "Warum GT Switzerland beitreten?",
+        form_securite_desc: "Sicherheit - Professionelle Organisation und Begleitung während der Reise",
+        form_important_note: "Wichtig:",
+        form_important_desc: "Mit einem Sternchen (*) gekennzeichnete Felder sind Pflichtfelder. Diese Vorbuchung stellt keine endgültige Verpflichtung dar und führt nicht zu einer sofortigen Zahlung.",
+        form_envoyer: "Meine Vorbuchung senden",
+        
+        // Pourquoi nous rejoindre
+        pourquoi_rejoindre_title: "Warum GT Switzerland beitreten?",
+        pourquoi_experience: "Erfahrung",
+        pourquoi_experience_desc: "5 Jahre erfolgreiche Organisation von Roadtrips durch Europa",
+        pourquoi_communaute: "Gemeinschaft",
+        pourquoi_communaute_desc: "Treten Sie einer Gemeinschaft von Enthusiasten mit gemeinsamen Werten bei",
+        pourquoi_securite: "Sicherheit",
+        pourquoi_securite_desc: "Professionelle Organisation mit vollständiger Unterstützung rund um die Uhr",
+        pourquoi_qualite: "Qualität",
+        pourquoi_qualite_desc: "Sorgfältig ausgewählte Unterkünfte und Dienstleistungen",
+        pourquoi_routes: "Außergewöhnliche Straßen",
+        pourquoi_routes_desc: "Die schönsten Straßen und Pässe Europas",
+        pourquoi_ambiance: "Freundliche Atmosphäre",
+        pourquoi_ambiance_desc: "Teilen und Leidenschaft zwischen den Teilnehmern",
+        
+        // Message de succès
+        success_message_title: "Vielen Dank für Ihre Buchung!",
+        success_message_text: "Wir haben Ihre Anfrage erhalten. Unser Team wird Sie innerhalb von 48 Stunden kontaktieren, um Ihre Teilnahme zu bestätigen und die erforderlichen zusätzlichen Informationen anzufordern (Anzahl der Passagiere, Ernährungspräferenzen usw.).",
+        
         // Formulaires
         form_nom: "Nachname",
         form_prenom: "Vorname",
@@ -408,6 +536,70 @@ const translations = {
         roadtrip_support_desc: "Technical and medical assistance 24/7 throughout the trip",
         roadtrip_souvenirs: "Souvenirs",
         roadtrip_souvenirs_desc: "Welcome pack, professional photos of the trip included",
+        
+        // Voyages - Pyrénées 2026
+        roadtrip_pyrenees_title: "Pyrenees Tour",
+        roadtrip_pyrenees_subtitle: "From the Mediterranean to the Atlantic – visit to wine cellars in Bordeaux",
+        roadtrip_pyrenees_date: "Date:",
+        roadtrip_pyrenees_date_value: "May 2 to 10, 2026",
+        roadtrip_pyrenees_nuits: "Nights:",
+        roadtrip_pyrenees_nuits_value: "7 nights",
+        roadtrip_pyrenees_places: "Spots:",
+        roadtrip_pyrenees_places_value: "10 cars max.",
+        roadtrip_pyrenees_prix: "Price:",
+        roadtrip_pyrenees_prix_value: "On request",
+        roadtrip_pyrenees_acompte: "Deposit:",
+        roadtrip_pyrenees_acompte_value: "50% upon booking and balance 10 days before the trip",
+        
+        // Voyages - Ce qui est inclus détaillé
+        roadtrip_hebergement_detail: "Nights in minimum 4-star hotels, double room, tourist taxes, welcome drinks in each hotel",
+        roadtrip_ferry: "Ferry",
+        roadtrip_ferry_desc: "Included in the package, if necessary",
+        roadtrip_guidage_detail: "Detailed roadbook with stages, distances, planned stops",
+        roadtrip_repas_detail: "Breakfast and lunch and dinner, drinks are included in the package (wines chosen by the organizer for meals)",
+        roadtrip_activites_detail: "Visits, entrance fees to museums or tastings",
+        roadtrip_signaletique: "Signage",
+        roadtrip_signaletique_desc: "Trip sticker with names and surnames of drivers and co-drivers",
+        roadtrip_souvenirs_detail: "Photo and route booklet after the trip and a gift, souvenir photo and trip video",
+        
+        // Non inclus
+        roadtrip_non_inclus: "Not included",
+        roadtrip_non_inclus_1: "Wines, spirits in addition to the meal/wine package, spas if not included in the accommodation",
+        roadtrip_non_inclus_2: "Vehicle fuel",
+        roadtrip_non_inclus_3: "Liability insurance and repatriation in case of breakdown or medical problem",
+        
+        // Formulaire de réservation
+        form_prereservation_title: "Pre-Reservation Form",
+        form_comment_ca_marche: "How does it work?",
+        form_comment_ca_marche_intro: "This form allows you to make a pre-reservation for one of our trips in 2026. Once your request is sent, our team will contact you personally to:",
+        form_comment_ca_marche_1: "Confirm your participation",
+        form_comment_ca_marche_2: "Communicate the destination and detailed program",
+        form_comment_ca_marche_3: "Collect additional information (number of passengers, dietary requirements, etc.)",
+        form_comment_ca_marche_4: "Explain payment terms – 50% deposit upon final booking and balance 10 days before departure",
+        form_pourquoi_rejoindre: "Why join GT Switzerland?",
+        form_securite_desc: "Safety - Professional organization and support during the trip",
+        form_important_note: "Important:",
+        form_important_desc: "Fields marked with an asterisk (*) are mandatory. This pre-reservation does not constitute a final commitment and does not result in immediate payment.",
+        form_envoyer: "Send my pre-reservation",
+        
+        // Pourquoi nous rejoindre
+        pourquoi_rejoindre_title: "Why join GT Switzerland?",
+        pourquoi_experience: "Experience",
+        pourquoi_experience_desc: "5 years of successful roadtrip organization across Europe",
+        pourquoi_communaute: "Community",
+        pourquoi_communaute_desc: "Join a community of enthusiasts sharing the same values",
+        pourquoi_securite: "Safety",
+        pourquoi_securite_desc: "Professional organization with full 24/7 assistance",
+        pourquoi_qualite: "Quality",
+        pourquoi_qualite_desc: "Carefully selected accommodations and services",
+        pourquoi_routes: "Exceptional Roads",
+        pourquoi_routes_desc: "The most beautiful roads and passes in Europe",
+        pourquoi_ambiance: "Friendly Atmosphere",
+        pourquoi_ambiance_desc: "Sharing and passion between participants",
+        
+        // Message de succès
+        success_message_title: "Thank you for your reservation!",
+        success_message_text: "We have received your request. Our team will contact you within 48 hours to confirm your participation and request the necessary additional information (number of passengers, food preferences, etc.).",
         
         // Formulaires
         form_nom: "Last Name",
