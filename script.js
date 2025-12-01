@@ -893,3 +893,171 @@ function updateCarousel(carouselId) {
     }
 }
 
+// EmailJS - Gestion des formulaires
+document.addEventListener('DOMContentLoaded', function() {
+    // Formulaire de contact
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            const currentLang = localStorage.getItem('preferredLanguage') || 'fr';
+            
+            // Messages de chargement selon la langue
+            const loadingMessages = {
+                fr: 'Envoi en cours...',
+                de: 'Wird gesendet...',
+                en: 'Sending...'
+            };
+            
+            // Désactiver le bouton et changer le texte
+            submitButton.disabled = true;
+            submitButton.textContent = loadingMessages[currentLang];
+            
+            // Récupérer les données du formulaire
+            const templateParams = {
+                nom: this.nom.value,
+                prenom: this.prenom.value,
+                email: this.email.value,
+                telephone: this.telephone.value,
+                raison: this.raison.value || 'Non spécifié',
+                adresse: this.adresse.value,
+                npa: this.npa.value,
+                localite: this.localite.value,
+                pays: this.pays.value,
+                sujet: this.sujet.value,
+                message: this.message.value
+            };
+            
+            // Envoyer via EmailJS
+            emailjs.send('service_o6vildv', 'template_td2ld8r', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Messages de succès selon la langue
+                    const successMessages = {
+                        fr: '✅ Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.',
+                        de: '✅ Nachricht erfolgreich gesendet! Wir werden Ihnen so schnell wie möglich antworten.',
+                        en: '✅ Message sent successfully! We will respond to you as soon as possible.'
+                    };
+                    
+                    // Afficher le message de succès
+                    alert(successMessages[currentLang]);
+                    
+                    // Réinitialiser le formulaire
+                    contactForm.reset();
+                    
+                    // Restaurer le bouton
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Messages d'erreur selon la langue
+                    const errorMessages = {
+                        fr: '❌ Erreur lors de l\'envoi. Veuillez réessayer ou nous contacter directement à contact@gtswitzerland.com',
+                        de: '❌ Fehler beim Senden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt unter contact@gtswitzerland.com',
+                        en: '❌ Error sending. Please try again or contact us directly at contact@gtswitzerland.com'
+                    };
+                    
+                    alert(errorMessages[currentLang]);
+                    
+                    // Restaurer le bouton
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                });
+        });
+    }
+    
+    // Formulaire de pré-réservation
+    const reservationForm = document.getElementById('reservationForm');
+    if (reservationForm) {
+        reservationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            const currentLang = localStorage.getItem('preferredLanguage') || 'fr';
+            
+            // Messages de chargement selon la langue
+            const loadingMessages = {
+                fr: 'Envoi en cours...',
+                de: 'Wird gesendet...',
+                en: 'Sending...'
+            };
+            
+            // Désactiver le bouton et changer le texte
+            submitButton.disabled = true;
+            submitButton.textContent = loadingMessages[currentLang];
+            
+            // Récupérer les données du formulaire
+            const templateParams = {
+                nom: this.nom.value,
+                prenom: this.prenom.value,
+                email: this.email.value,
+                telephone: this.telephone.value,
+                raison: this.raison.value || 'Non spécifié',
+                adresse: this.adresse.value,
+                npa: this.npa.value,
+                localite: this.localite.value,
+                pays: this.pays.value,
+                vehicule: this.vehicule.value || 'Non spécifié',
+                message: this.message.value || 'Aucun message'
+            };
+            
+            // Envoyer via EmailJS
+            emailjs.send('service_o6vildv', 'template_kmj90v8', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Messages de succès selon la langue
+                    const successMessages = {
+                        fr: '✅ Pré-réservation envoyée avec succès ! Notre équipe vous contactera dans les 48 heures pour confirmer votre participation.',
+                        de: '✅ Vorbuchung erfolgreich gesendet! Unser Team wird Sie innerhalb von 48 Stunden kontaktieren, um Ihre Teilnahme zu bestätigen.',
+                        en: '✅ Pre-reservation sent successfully! Our team will contact you within 48 hours to confirm your participation.'
+                    };
+                    
+                    // Afficher le message de succès
+                    const successDiv = document.querySelector('.success-message');
+                    if (successDiv) {
+                        successDiv.classList.add('show');
+                        successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        
+                        // Cacher après 10 secondes
+                        setTimeout(() => {
+                            successDiv.classList.remove('show');
+                        }, 10000);
+                    } else {
+                        alert(successMessages[currentLang]);
+                    }
+                    
+                    // Réinitialiser le formulaire
+                    reservationForm.reset();
+                    
+                    // Restaurer le bouton
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Messages d'erreur selon la langue
+                    const errorMessages = {
+                        fr: '❌ Erreur lors de l\'envoi. Veuillez réessayer ou nous contacter directement à contact@gtswitzerland.com',
+                        de: '❌ Fehler beim Senden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt unter contact@gtswitzerland.com',
+                        en: '❌ Error sending. Please try again or contact us directly at contact@gtswitzerland.com'
+                    };
+                    
+                    alert(errorMessages[currentLang]);
+                    
+                    // Restaurer le bouton
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                });
+        });
+    }
+});
+
