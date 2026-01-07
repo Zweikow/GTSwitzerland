@@ -940,10 +940,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 reply_to: formData.get('email')
             };
             
-            // DEBUG: Afficher les données envoyées
-            console.log('Formulaire contact soumis');
-            console.log('templateParams:', JSON.stringify(templateParams, null, 2));
-            
             // Envoyer via EmailJS
             emailjs.send('service_o6vildv', 'template_td2ld8r', templateParams)
                 .then(function(response) {
@@ -1025,10 +1021,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 from_name: 'GT Switzerland',
                 reply_to: formData.get('email')
             };
-            
-            // DEBUG: Afficher les données envoyées
-            console.log('Formulaire pré-réservation soumis');
-            console.log('templateParams:', JSON.stringify(templateParams, null, 2));
             
             // Envoyer via EmailJS
             emailjs.send('service_o6vildv', 'template_kmj90v8', templateParams)
