@@ -1008,6 +1008,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 message: this.message.value || 'Aucun message'
             };
             
+            // DEBUG: Afficher les données envoyées
+            console.log('Formulaire soumis');
+            console.log('templateParams:', JSON.stringify(templateParams, null, 2));
+            
             // Envoyer via EmailJS
             emailjs.send('service_o6vildv', 'template_kmj90v8', templateParams)
                 .then(function(response) {
