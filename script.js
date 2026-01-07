@@ -952,8 +952,19 @@ document.addEventListener('DOMContentLoaded', function() {
                         en: '✅ Message sent successfully! We will respond to you as soon as possible.'
                     };
                     
-                    // Afficher le message de succès
-                    alert(successMessages[currentLang]);
+                    // Afficher le message de succès intégré à la page
+                    const successDiv = document.querySelector('.success-message');
+                    if (successDiv) {
+                        successDiv.classList.add('show');
+                        successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        
+                        // Cacher après 10 secondes
+                        setTimeout(() => {
+                            successDiv.classList.remove('show');
+                        }, 10000);
+                    } else {
+                        alert(successMessages[currentLang]);
+                    }
                     
                     // Réinitialiser le formulaire
                     contactForm.reset();
