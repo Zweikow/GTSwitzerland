@@ -46,12 +46,32 @@
     </nav>
 
     <!-- Page Header -->
-    <section class="hero" style="background-image: url('images/switzerland/SwitzerlandTour_SanBernardino.png'); height: 40vh; transform: scaleX(-1);">
-        <div class="hero-content" style="transform: scaleX(-1);">
+    <section class="hero hero-flipped" style="height: 40vh;">
+        <div class="hero-content">
             <h1 data-i18n="contact_title">Contactez-nous</h1>
             <p>Nous sommes à votre écoute</p>
         </div>
     </section>
+    
+    <style>
+        .hero-flipped {
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-flipped::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('images/switzerland/SwitzerlandTour_SanBernardino.png');
+            background-size: cover;
+            background-position: center;
+            transform: scaleX(-1);
+            z-index: -1;
+        }
+    </style>
 
     <div class="container">
         <!-- Informations de contact -->
