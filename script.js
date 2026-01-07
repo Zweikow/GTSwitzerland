@@ -745,8 +745,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Gérer les formulaires (SAUF contact et réservation qui sont gérés par EmailJS)
-    const forms = document.querySelectorAll('form:not(#contactForm):not(#reservationForm)');
+    const forms = document.querySelectorAll('form');
     forms.forEach(form => {
+        // Ignorer les formulaires gérés par EmailJS
+        if (form.id === 'contactForm' || form.id === 'reservationForm') {
+            return; // Ne pas ajouter de listener sur ces formulaires
+        }
+        
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
