@@ -744,8 +744,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Gérer les formulaires
-    const forms = document.querySelectorAll('form');
+    // Gérer les formulaires (SAUF contact et réservation qui sont gérés par EmailJS)
+    const forms = document.querySelectorAll('form:not(#contactForm):not(#reservationForm)');
     forms.forEach(form => {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
@@ -764,8 +764,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 5000);
             }
             
-            // Dans un vrai site, vous enverriez les données à un serveur
-            console.log('Formulaire soumis');
+            console.log('Formulaire générique soumis');
         });
     });
     
