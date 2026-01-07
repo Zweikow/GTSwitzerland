@@ -916,20 +916,29 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.disabled = true;
             submitButton.textContent = loadingMessages[currentLang];
             
-            // Récupérer les données du formulaire
+            // Récupérer les données du formulaire avec FormData (méthode plus fiable)
+            const formData = new FormData(this);
+            
             const templateParams = {
-                nom: this.nom.value,
-                prenom: this.prenom.value,
-                email: this.email.value,
-                telephone: this.telephone ? this.telephone.value : 'Non renseigné',
-                raison: this.raison.value || 'Non spécifié',
-                adresse: this.adresse.value,
-                npa: this.npa.value,
-                localite: this.localite.value,
-                pays: this.pays.value,
-                sujet: this.sujet.value,
-                message: this.message.value
+                nom: formData.get('nom'),
+                prenom: formData.get('prenom'),
+                email: formData.get('email'),
+                telephone: formData.get('telephone') || 'Non renseigné',
+                raison: formData.get('raison') || 'Non spécifié',
+                adresse: formData.get('adresse'),
+                npa: formData.get('npa'),
+                localite: formData.get('localite'),
+                pays: formData.get('pays'),
+                sujet: formData.get('sujet'),
+                message: formData.get('message'),
+                // Informations supplémentaires pour EmailJS
+                from_name: 'GT Switzerland',
+                reply_to: formData.get('email')
             };
+            
+            // DEBUG: Afficher les données envoyées
+            console.log('Formulaire contact soumis');
+            console.log('templateParams:', JSON.stringify(templateParams, null, 2));
             
             // Envoyer via EmailJS
             emailjs.send('service_o6vildv', 'template_td2ld8r', templateParams)
@@ -993,23 +1002,28 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.disabled = true;
             submitButton.textContent = loadingMessages[currentLang];
             
-            // Récupérer les données du formulaire
+            // Récupérer les données du formulaire avec FormData (méthode plus fiable)
+            const formData = new FormData(this);
+            
             const templateParams = {
-                nom: this.nom.value,
-                prenom: this.prenom.value,
-                email: this.email.value,
-                telephone: this.telephone.value,
-                raison: this.raison.value || 'Non spécifié',
-                adresse: this.adresse.value,
-                npa: this.npa.value,
-                localite: this.localite.value,
-                pays: this.pays.value,
-                vehicule: this.vehicule.value || 'Non spécifié',
-                message: this.message.value || 'Aucun message'
+                nom: formData.get('nom'),
+                prenom: formData.get('prenom'),
+                email: formData.get('email'),
+                telephone: formData.get('telephone'),
+                raison: formData.get('raison') || 'Non spécifié',
+                adresse: formData.get('adresse'),
+                npa: formData.get('npa'),
+                localite: formData.get('localite'),
+                pays: formData.get('pays'),
+                vehicule: formData.get('vehicule') || 'Non spécifié',
+                message: formData.get('message') || 'Aucun message',
+                // Informations supplémentaires pour EmailJS
+                from_name: 'GT Switzerland',
+                reply_to: formData.get('email')
             };
             
             // DEBUG: Afficher les données envoyées
-            console.log('Formulaire soumis');
+            console.log('Formulaire pré-réservation soumis');
             console.log('templateParams:', JSON.stringify(templateParams, null, 2));
             
             // Envoyer via EmailJS
